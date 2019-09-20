@@ -1,0 +1,7 @@
+/* https://www.urionlinejudge.com.br/judge/pt/problems/view/2614 */
+
+SELECT  B.NAME,
+        A.RENTALS_DATE
+FROM RENTALS AS A
+INNER JOIN CUSTOMERS AS B ON (A.ID_CUSTOMERS = B.ID)
+WHERE A.RENTALS_DATE BETWEEN '2016-09-01' AND '2016-09-30';

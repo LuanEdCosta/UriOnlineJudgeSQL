@@ -1,0 +1,7 @@
+/* https://www.urionlinejudge.com.br/judge/pt/problems/view/2621 */
+
+SELECT A.NAME
+FROM PRODUCTS AS A 
+INNER JOIN PROVIDERS AS B ON (A.ID_PROVIDERS = B.ID)
+WHERE A.AMOUNT BETWEEN 10 AND 20
+AND B.NAME LIKE 'P%';
